@@ -16,9 +16,6 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { FakeAPIService } from './_fake/fake-api.service';
 // #fake-end#
 import { ToastrModule } from 'ngx-toastr';
-import { RolesComponent } from './modules/roles/roles.component';
-import { CreateRolesComponent } from './modules/create-roles/create-roles.component';
-import { EditRolesComponent } from './modules/edit-roles/edit-roles.component';
 
 function appInitializer(authService: AuthService) {
   return () => {
@@ -30,7 +27,7 @@ function appInitializer(authService: AuthService) {
 }
 
 @NgModule({
-  declarations: [AppComponent, RolesComponent, CreateRolesComponent, EditRolesComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
